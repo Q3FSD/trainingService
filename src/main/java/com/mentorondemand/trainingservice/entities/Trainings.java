@@ -55,9 +55,6 @@ public class Trainings implements Serializable {
 	@Column(name = "skill_name", nullable = false)
 	private String skillName;
 
-	@Column(name = "payment_id")
-	private String paymentId;
-
 	public Trainings() {
 	}
 
@@ -155,14 +152,6 @@ public class Trainings implements Serializable {
 
 	public void setSkillName(String skillName) {
 		this.skillName = skillName;
-	}
-
-	public String getPaymentId() {
-		return paymentId;
-	}
-
-	public void setPaymentId(String paymentId) {
-		this.paymentId = paymentId;
 	}
 
 }
