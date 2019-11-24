@@ -18,7 +18,7 @@ import com.mentorondemand.trainingservice.entities.Trainings;
 import com.mentorondemand.trainingservice.services.TrainingRepository;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://111.231.63.123:4200")
 @RequestMapping(path = "/v1/training")
 public class TrainingController {
 	@Autowired // This means to get the bean called trainingRepository
