@@ -3,7 +3,6 @@ package com.mentorondemand.trainingservice.controllers;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,7 +17,6 @@ import com.mentorondemand.trainingservice.entities.Trainings;
 import com.mentorondemand.trainingservice.services.TrainingRepository;
 
 @RestController
-@CrossOrigin(origins = "http://111.231.63.123:4200")
 @RequestMapping(path = "/v1/training")
 public class TrainingController {
 	@Autowired // This means to get the bean called trainingRepository
